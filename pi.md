@@ -56,4 +56,20 @@ int main(int argc,char *argv[])
     return 0;
 
 }
+
+[hpchgc@node838 mpi]$ mpirun -np 1 pi
+Please input n: 1000000000
+Pi is: 3.14159
+Tasks over
+Cost time: 6.23019 s.
+[hpchgc@node838 mpi]$ mpirun -np 2 pi
+Please input n: 1000000000
+Pi is: 3.14159
+Tasks over
+Cost time: 3.96875 s.
+[hpchgc@node838 mpi]$ mpirun -np 4 pi
+Please input n: 1000000000
+Pi is: 3.14159
+Tasks over
+Cost time: 2.44586 s.
 ```
