@@ -6,6 +6,12 @@ mpic++ hello.c -o hello
 mpirun -np 2 ./hello
 ```
 
+mpi+openmp
+```
+module load openmpi
+mpicc -fopenmp hybrid.cpp -o hybrid
+```
+
 使用intel编译的命令
 ```
 module load intel-oneapi-compilers/2021.4.0
