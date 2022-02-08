@@ -9,7 +9,7 @@ mpirun -np 2 ./hello
 mpi+openmp
 ```
 module load openmpi
-mpicc -fopenmp hybrid.cpp -o hybrid
+mpicc -fopenmp hybrid.c -o hybrid
 ```
 
 使用intel编译的命令
