@@ -1,3 +1,9 @@
+int MPI_Send(const void *buf, int count, MPI_Datatype datatype, int dest,
+    int tag, MPI_Comm comm)
+int MPI_Recv(void *buf, int count, MPI_Datatype datatype,
+    int source, int tag, MPI_Comm comm, MPI_Status *status)
+
+
 #include<mpi.h>
 #include<iostream>
 int main(int argc,char **argv){
