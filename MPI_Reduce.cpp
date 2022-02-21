@@ -20,7 +20,8 @@ int main(int argc,char **argv){
     MPI_Status status;
     MPI_Comm_size(MPI_COMM_WORLD,&nprocs);
     MPI_Comm_rank(MPI_COMM_WORLD,&myrank);
-    srand(time(NULL)*myrank);
+    // Create a random array of elements on all processes.
+    srand(time(NULL)*myrank); // Seed the random number generator of processes uniquely
     float *rand_nums=NULL;
     rand_nums=create_rand_nums(num_elements);
 
